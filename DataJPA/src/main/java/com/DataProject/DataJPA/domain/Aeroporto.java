@@ -34,6 +34,7 @@ public class Aeroporto{
 	
 	
 	@ManyToOne
+	//Foreign Key a2 -mappedBy assente- Aeroporto propetiario della relazione
 	@JoinColumn(name = "a2", nullable = false)
 	private Paese paese;
 	
