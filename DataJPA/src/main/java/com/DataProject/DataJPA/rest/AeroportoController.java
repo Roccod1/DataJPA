@@ -20,6 +20,7 @@ import com.DataProject.DataJPA.service.AeroportoService;
 
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
@@ -36,7 +37,7 @@ public class AeroportoController {
 	public AeroportoController(AeroportoService aeroportoService) {
 		this.aeroportoService =aeroportoService;
 	}
-	
+	@ApiOperation(value = "Restituisco Aeroporto attraverso l'Organizzazione Internazionale per l'Aviazione Civile ", response = Aeroporto.class)
 	@ApiResponses(
 	        value = {
 	            @ApiResponse(code = 200, message = "Aeroporto by Icao"),
@@ -58,7 +59,7 @@ public class AeroportoController {
 		
 		return new ResponseEntity<>(optionalAeroporto.get(), HttpStatus.OK);
 	}
-	
+	@ApiOperation(value = "Restituisco tutti gli Aeroporto attraverso l'organizzazione internazionale delle compagnie aeree", response = Aeroporto.class)
 	@ApiResponses(
 	        value = {
 	            @ApiResponse(code = 200, message = "Aeroporto by Iata"),
@@ -80,7 +81,7 @@ public class AeroportoController {
 		
 		return new ResponseEntity<>(optionalAeroporto.get(), HttpStatus.OK);
 	}
-	
+	@ApiOperation(value = "Restituisco tutti gli Aeroporto della Città inserita", response = Aeroporto.class)
 	@ApiResponses(
 	        value = {
 	            @ApiResponse(code = 200, message = "Aeroporto by Citta"),
