@@ -37,7 +37,7 @@ public class AeroportoController {
 	public AeroportoController(AeroportoService aeroportoService) {
 		this.aeroportoService =aeroportoService;
 	}
-	@ApiOperation(value = "Restituisco Aeroporto attraverso l'Organizzazione Internazionale per l'Aviazione Civile ", response = Aeroporto.class)
+	@ApiOperation(value = "Restituisco l'Aeroporto attraverso l'Organizzazione Internazionale per l'Aviazione Civile ", response = Aeroporto.class)
 	@ApiResponses(
 	        value = {
 	            @ApiResponse(code = 200, message = "Aeroporto by Icao"),
