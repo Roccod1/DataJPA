@@ -34,8 +34,6 @@ public class Aeroporto{
 	
 	
 	@ManyToOne
-	//Foreign Key in questa tabella verso a2 Paese, @JoinColumn indica chiave esterna, dunque propetario
-	// della relazione
 	@JoinColumn(name = "a2", nullable = false)
 	private Paese paese;
 	

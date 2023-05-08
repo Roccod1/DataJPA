@@ -13,7 +13,7 @@
 	<artifactId>DataJPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DataJPA</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Tutti gli Aeroporti del mondo</description>
 	<properties>
 		<java.version>17</java.version>
 		<springfox.version>2.9.2</springfox.version>
