@@ -15,6 +15,4 @@ public interface AeroportoRepository extends JpaRepository<Aeroporto, Long>{
 	Optional<Aeroporto> findByIata(String iata);
 	Optional<List<Aeroporto>> findByCitta(String citta);
 	
-	
-
 }
