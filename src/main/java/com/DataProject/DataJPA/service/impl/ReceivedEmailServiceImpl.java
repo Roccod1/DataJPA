@@ -42,7 +42,7 @@ public class ReceivedEmailServiceImpl implements ReceivedEmailService{
 
 	@Override
 	public Optional<ReceivedEmail> update(String airline, String status, Integer id) {
-		logger.debug("Init update");
+		logger.debug("Init Aggiorna");
 //		ReceivedEmail receivedEmail = new ReceivedEmail();
 //		receivedEmail.setId(id);
 //		receivedEmail.setAirline(airline);
@@ -66,7 +66,7 @@ public class ReceivedEmailServiceImpl implements ReceivedEmailService{
 
 	@Override
 	public Optional<ReceivedEmail> delete(Integer id) {
-		logger.debug("Init delete");
+		logger.debug("Init cancella");
 		Optional<ReceivedEmail>optionalById=Optional.empty();
 		optionalById=receivedEmailRepository.findById(id);
 		if(optionalById.isPresent()) {
